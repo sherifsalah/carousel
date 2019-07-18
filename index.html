@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="carousel-container">
+      <button class="carousel-button left hide">
+        <svg height="32" class="octicon octicon-chevron-left" viewBox="0 0 8 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.5 3L7 4.5 3.25 8 7 11.5 5.5 13l-5-5 5-5z"></path></svg>
+      </button>
+      <div class="carousel-slides">
+        <img src="assets/img/one.jpg" class="current" alt="image one" />
+        <img src="assets/img/two.jpg" alt="image two" />
+        <img src="assets/img/three.jpg" alt="image three" />
+        <img src="assets/img/four.jpg" alt="image four" />
+        <img src="assets/img/svg.svg" alt="svg" />
+        <video controls>
+          <source src="assets/img/mov_bbb.mp4" type="video/mp4" />
+          <source src="assets/img/mov_bbb.ogg" type="video/ogg" />
+          Your browser does not support HTML5 video.
+        </video>
+        <!-- <img src="assets/img/six.jpg" alt="image six" />
+        <img src="assets/img/seven.jpg" alt="image seven" />
+        <img src="assets/img/eight.jpg" alt="image eight" />
+        <img src="assets/img/nine.jpg" alt="image nine" />
+        <img src="assets/img/ten.jpg" alt="image ten" /> -->
+      </div>
+      <button class="carousel-button right">
+        <svg height="32" class="octicon octicon-chevron-right" viewBox="0 0 8 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"></path></svg>
+      </button>
+    </div>
+    <div class="carousel-navigation"></div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

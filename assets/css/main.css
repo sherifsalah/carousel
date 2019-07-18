@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  margin: 0 auto;
+  width: 50%;
+  max-width: 100%;
+  border: 0.25rem solid #000000;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slides img,
+.carousel-slides svg,
+.carousel-slides video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.carousel-button.left {
+  left: 0;
+}
+
+.carousel-button.right {
+  right: 0;
+}
+
+.carousel-navigation {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-navigation-button {
+  border: 0;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-navigation-button:first-child {
+  margin-left: 0;
+}
+
+.carousel-navigation-button:last-child {
+  margin-right: 0;
+}
+
+.carousel-navigation-button.current {
+  background-color: rgba(100, 255, 100, 0.5);
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .carousel-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .carousel-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-container {
+    width: 50%;
+  }
+}
