@@ -30,6 +30,7 @@ window.addEventListener("DOMContentLoaded", event => {
       temp += `<button class="carousel-navigation-button` + (navs === 0 ? ` current` : ``) + `"></button>`;
     }
     navigation.innerHTML = temp;
+    navButtons = Array.from(navigation.children);
   };
   createNavs();
 
@@ -93,7 +94,6 @@ window.addEventListener("DOMContentLoaded", event => {
     let currentNav = navigation.querySelector(".carousel-navigation-button.current");
     let targetIndex = navButtons.findIndex(nav => nav === targetNav);
     let targetSlide = slides[targetIndex];
-    console.log(slides);
     moveSlide(slidesContainer, currentSlide, targetSlide);
     navigate(currentNav, targetNav);
     toggleButtons(slides, prevButton, nextButton, targetIndex);
